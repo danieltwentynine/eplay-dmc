@@ -1,12 +1,18 @@
 import Banner from './components/Banner'
 import Header from './components/Header'
+import Products from './components/Products'
 import { GlobalCss } from './styles'
 import { createBrowserRouter, Router, RouterProvider } from 'react-router-dom'
 
 const routes = createBrowserRouter([
   {
     path: '/',
-    element: <Banner />
+    element: (
+      <>
+        <Banner />
+        <Products />
+      </>
+    )
   }
 ])
 
